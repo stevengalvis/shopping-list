@@ -38,7 +38,7 @@ $('#js-shopping-list-form').submit(function(event) {
 
 $('.shopping-list').on("click", ".shopping-item-toggle", function(event) {
     event.preventDefault();
-    $(this).toggleClass("shopping-item__checked");
+    $(this).closest('li').toggleClass("shopping-item__checked");
 });
 
 $('.shopping-list').on("click",".shopping-item-delete",function(event){
